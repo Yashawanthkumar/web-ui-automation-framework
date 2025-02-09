@@ -1,0 +1,16 @@
+<suite name="Selenium Test Suite">
+	<listeners>
+		<listener class-name="listeners.TestListener" />
+	</listeners>
+	<test name="Smoke and Regression Tests">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="regression" />
+			</run>
+		</groups>
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+</suite>

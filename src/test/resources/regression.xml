@@ -1,0 +1,11 @@
+<suite name="Selenium Test Suite">
+    <listeners>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

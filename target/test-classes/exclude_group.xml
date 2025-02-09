@@ -1,0 +1,17 @@
+<suite name="Selenium Test Suite">
+
+	<listeners>
+		<listener class-name="listeners.TestListener" />
+	</listeners>
+	
+	<test name="Exclude Smoke Tests">
+		<groups>
+			<run>
+				<exclude name="smoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+</suite>
